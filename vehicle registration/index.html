@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de veículos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h3 id="header-title">Venda o seu veículo mais rápido</h3>
+        </header>
+        <main id="form-container">
+            <div id="form-header">
+                <p>Cadastro</p>
+            </div>
+            <div id="form-body">
+                <div class="form-title">
+                    <h1>
+                        Venda fácil o seu veículo
+                    </h1>
+                    <p>
+                        Descreva as características do seu veículo e marque todas os opicionais e características que
+                        ele possui
+                    </p>
+                </div>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio:<span class="red-mark"> *</span></label>
+                        <input type="text" name="title" id="title" class="block"
+                            placeholder="Escreva o tútulo do anúncio">
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço do veículo:<span class="red-mark"> *</span></label>
+                        <input type="number" name="price" id="price" class="block">
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição<span class="red-mark"> *</span></label><br>
+                        <textarea name="description" id="description" cols="30" rows="10" class="block"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="unique-owner">Único Dono?<span class="red-mark"> *</span></label>
+                        <select name="unique-owner" id="unique-owner">
+                            <option value="">Selecione</option>
+                            <option value="true">Sim</option>
+                            <option value="false">Não</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Marca:<span class="red-mark"> *</span></label>
+                        <input type="text" name="brand" id="brand" class="block"
+                            placeholder="Digite a marca do veículo">
+                    </div>
+                    <div class="box-input">
+                        <label for="model">Modelo:<span class="red-mark"> *</span></label>
+                        <input type="text" name="model" id="model" class="block"
+                            placeholder="Digite o Modelo do veículo">
+                    </div>
+                    <div class="box-input">
+                        <label for="mileage">Quilometragem:<span class="red-mark"> *</span></label>
+                        <input type="number" name="mileage" id="mileage" class="block">
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase-date">Data de compra do veículo:<span class="red-mark"> *</span></label>
+                        <input type="date" name="purchase-date" id="purchase-date" class="block">
+                    </div>
+                    <div class="box-input transmission">
+                        <p>Cambio:<span class="red-mark"> *</span></p>
+                        <input type="radio" name="transmission" id="manual-transmission">
+                        <label for="transmission">Manual</label>
+                        <input type="radio" name="transmission" id="automatic-transmission">
+                        <label for="transmission">Automático</label>
+                    </div>
+                    <div class="box-optionals">
+                        <label for="optional">Opicionais:</label>
+                        <ul>
+                            <li><input type="checkbox" name="optional" id="ar-conditioner">Ar-condicionado</li>
+                            <li><input type="checkbox" name="optional" id="hidraulic">Direção hidráulica</li>
+                            <li><input type="checkbox" name="optional" id="airbag">Air-Bag</li>
+                            <li><input type="checkbox" name="optional" id="alarm">Alarme</li>
+                        </ul>
+                    </div>
+                    <div class="box-optionals">
+                        <ul>
+                            <li><input type="checkbox" name="optional" id="sunroof">Teto Solar</li>
+                            <li><input type="checkbox" name="optional" id="soundsystem">Som</li>
+                            <li><input type="checkbox" name="optional" id="eletric-lock">Trava elétrica</li>
+                            <li><input type="checkbox" name="optional" id="leather-seat">Banco de couro</li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Envie imagens do veículo</p>
+                        <input type="file" multiple accept="image/png, image/jpg" name="image" id="image">
+                    </div>
+                    <input type="submit" value="Cadastar" name="button" id="button" class="block">
+                </form>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
